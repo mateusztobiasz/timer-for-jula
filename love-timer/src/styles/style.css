@@ -9,7 +9,7 @@ body {
   justify-content: center;
   background: linear-gradient(100deg, #3F5EFB, #713ae0, #9c48e6, #f15aaf);
   background-size: 300% 300%;
-  animation: gradient 35s ease infinite;
+  animation: gradient 40s ease infinite;
 }
 
 .container{
@@ -32,7 +32,7 @@ body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
-  font-size: 11rem;
+  font-size: 130px;
   font-variant-numeric: tabular-nums;
 }
 
