@@ -36,9 +36,14 @@ body {
   margin-top: 20px;
   text-align: center;
   margin: 0;
+  font-size: 60px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
+}
+
+.together-text{
+  grid-column: 1 / -1;
 }
 
 @media (max-width: 550px) {
