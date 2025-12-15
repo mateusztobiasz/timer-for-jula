@@ -26,26 +26,66 @@ body {
 .heart{
   margin: 0; 
   width: 170px;
-  animation: float 10s ease-in-out infinite;
+  animation: float 8s ease-in-out infinite;
 }
 
 #timer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 20px;
   text-align: center;
-  display: inline-flex;
-  align-items: center; /* vertical alignment */
   margin: 0;
+  font-size: 60px;
   font-family: 'Quicksand', sans-serif;
-  font-weight: 580;
-  font-size: 90px;
+  font-weight: 600;
   font-variant-numeric: tabular-nums;
 }
 
+.together-text{
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 550px) {
+  #timer{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;  
+  aspect-ratio: 1 / 1;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 16px 10px;
+  text-align: center;
+}
+
+.value {
+  font-size: 4.2rem;
+  line-height: 1;
+}
+
+.label {
+  padding-top: 3px;
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-top: 6px;
+  opacity: 0.8;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 .bottom-text{
-  padding: 30px 10px 0 10px;
+  padding: 0px 10px 0 10px;
   font-family: 'Quicksand', sans-serif;
   font-size: 37px;
   font-weight: 380;
-  animation: pulse 30s ease-in-out infinite;
+  animation: pulse 10s ease-in-out infinite;
 }
 
 @keyframes gradient {
@@ -61,9 +101,9 @@ body {
 }
 
 @keyframes float {
-  0%   { transform: translateY(-1px); }
-  50%  { transform: translateY(17px); }
-  100% { transform: translateY(-1px); }
+  0%   { transform: translateY(-20px); }
+  50%  { transform: translateY(10px); }
+  100% { transform: translateY(-20px); }
 }
 
 @keyframes pulse {
@@ -72,7 +112,7 @@ body {
       opacity: 1;
     }
     50% {
-      transform: scale(1.05);
+      transform: scale(1.02);
       opacity: 0.8;
     }
     100% {
