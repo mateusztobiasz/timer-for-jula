@@ -25,5 +25,5 @@ function updateTimer() {
     if (seconds != 0) {timer.textContent += `${seconds}s`}
 }
 
-setInterval(updateTimer, 1000);
-updateTimer();
+//setInterval(updateTimer, 1000);
+//updateTimer();
