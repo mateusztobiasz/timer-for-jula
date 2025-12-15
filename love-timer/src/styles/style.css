@@ -15,10 +15,9 @@ body {
 .container{
   color: #fdf7ff;
   display: flex;
-  flex-direction: column;
   justify-content: center; 
   align-items: center;  
-  height: 200px;  
+  height: 100vh;
   gap: 0;
   text-align: center;
 }
@@ -34,6 +33,8 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
   margin-top: 20px;
+  align-items: center;   /* vertical centering in each cell */
+  justify-items: center; /* horizontal centering in each cell */
   text-align: center;
   margin: 0;
   font-size: 60px;
