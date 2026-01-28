@@ -1,4 +1,4 @@
-    const meetingDate = new Date("2026-01-07T23:00:00");
+    const meetingDate = new Date("2026-02-03T20:00:00");
 
     function updateTimer() {
         const bottomText = document.querySelector(".bottom-text")
